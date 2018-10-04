@@ -2,6 +2,7 @@
 
 body {
   background-color: #36b55c;
+  transition: background 1s;
   color: white;
   font-family: 'Playfair Display', serif;
 }
@@ -9,7 +10,7 @@ body {
 #quote-box {
   position: absolute;
   top: 20%;
-  left: 10%;
+  left: 10%;S
   right: 10%;
   width: 80%;
   line-height: .5;
@@ -21,6 +22,17 @@ body {
   line-height: 1.1;
   position: relative;
   margin: 0;
+  animation-duration: 2s;
+  animation-name: fadein;
+}
+@keyframes fadein {
+  from {
+    opacity: 0; 
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .quote:before, .quote:after {
@@ -83,7 +95,8 @@ body {
   transition: .5s ;
 }
 #loadQuote:hover {
-  background-color: rgba(255,255,255,.25);
+  background-color: rgba(255,255,255,.25) !important;
+  transition: background 1s;
 }
 
 #loadQuote:focus {
