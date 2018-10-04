@@ -2,11 +2,11 @@
 
 // Create the array of quote objects and name it quotes
 var quotes = [
-{quote: "It's never too late to be who you might have been.", source: "George Eliot", tags:"motivation"},
-{quote: "Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.", source: "Dale Carnegie", tags:"motivation"},
-{quote: "Choose the positive. — You have choice — you are master of your attitude — choose the POSITIVE, the CONSTRUCTIVE. Optimism is a faith that leads to success.", source: "Bruce Lee", citation: "Striking Thoughts", year: 2000, tags: "life" },
-{quote: "Be a loner. That gives you time to wonder, to search for the truth. Have holy curiosity. Make your life worth living.", source: "Albert Einstein", citation: "Einstein and the Poet", year: 1983, tags: "life"},
-{quote: "There are no mistakes in life, only lessons. There is no such things as a negative experience, only opprotunities to grow, learn and advance along the road of self-mastery. From struggle comes strength. Even pain can be a wonderful teacher.", source: "Robin Sharma", citation: "The Monk Who Sold His Ferrari", year: 1998, tags: "life"}
+{quote: "It's never too late to be who you might have been.", source: "George Eliot", tags:"Motivation"},
+{quote: "Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.", source: "Dale Carnegie", tags:"Motivation"},
+{quote: "Choose the positive. — You have choice — you are master of your attitude — choose the POSITIVE, the CONSTRUCTIVE. Optimism is a faith that leads to success.", source: "Bruce Lee", citation: "Striking Thoughts", year: 2000, tags: "Life" },
+{quote: "Be a loner. That gives you time to wonder, to search for the truth. Have holy curiosity. Make your life worth living.", source: "Albert Einstein", citation: "Einstein and the Poet", year: 1983, tags: "Life"},
+{quote: "There are no mistakes in life, only lessons. There is no such things as a negative experience, only opprotunities to grow, learn and advance along the road of self-mastery. From struggle comes strength. Even pain can be a wonderful teacher.", source: "Robin Sharma", citation: "The Monk Who Sold His Ferrari", year: 1998, tags: "Life"}
 ];
 
 var quoteRefresh = window.setInterval(printQuote,10000);
