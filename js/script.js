@@ -10,7 +10,7 @@ const quotes = [
 ];
 
 // Define variable to refresh the quote in a pre determined interval
-let quoteRefresh = window.setInterval(printQuote,10000);
+let quoteRefresh = window.setInterval(printQuote,20000);
 let randomQuote;
 let previousQuote;
 
