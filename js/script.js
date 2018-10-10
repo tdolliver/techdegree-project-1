@@ -1,6 +1,6 @@
 // FSJS - Random Quote Generator
 
-// Create the array of quote objects and name it quotes
+// Creates an array of quote objects.
 const quotes = [
 {quote: "It's never too late to be who you might have been.", source: "George Eliot", tags:"Motivation"},
 {quote: "Develop success from failures. Discouragement and failure are two of the surest stepping stones to success.", source: "Dale Carnegie", tags:"Motivation"},
@@ -9,11 +9,13 @@ const quotes = [
 {quote: "There are no mistakes in life, only lessons. There is no such things as a negative experience, only opprotunities to grow, learn and advance along the road of self-mastery. From struggle comes strength. Even pain can be a wonderful teacher.", source: "Robin Sharma", citation: "The Monk Who Sold His Ferrari", year: 1998, tags: "Life"}
 ];
 
+// Define variable to refresh the quote in a pre determined interval
 let quoteRefresh = window.setInterval(printQuote,10000);
 let randomQuote;
 let previousQuote;
 
-// Create the getRandomQuuote function and name it getRandomQuote
+// getRandomQuote will choose a random quote from the 'quotes' array. It will compare the newly choosen quote to the previous quote, and pick another if the values are the same. 
+// This prevents the same quote from being displayed twice in a row. 
 function getRandomQuote(array) {
 	if (randomQuote === undefined) {
 		randomQuote = array[Math.floor(Math.random() * Math.floor(array.length))];
@@ -32,6 +34,7 @@ function getRandomQuote(array) {
 getRandomQuote(quotes);
 
 // The randomBackgroundColor function below was adapted from https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php.
+// The randomBackgroundColor function will choose random rgb values and set the background to a new color every time it is called. 
 function randomBackgroundColor() {
     let r = Math.floor(Math.random() * 200);
     let g = Math.floor(Math.random() * 200);
@@ -44,7 +47,8 @@ function randomBackgroundColor() {
 
     }
 
-// Create the printQuote funtion and name it printQuote
+// The printQuote function is what is writing the quote to the screen and also refreshing the new quote interval every time it is called. 
+// It will determine to include properties by whether or not they exist for that specific quote. 
 function printQuote() {
 
 	let  myRandomQuote = getRandomQuote(quotes);
