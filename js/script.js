@@ -24,8 +24,6 @@ function getRandomQuote(array) {
 		while (randomQuote === previousQuote) {
 			randomQuote = array[Math.floor(Math.random() * Math.floor(array.length))];
 		}
-		console.log("new quote: " + randomQuote.quote);
-		console.log("previous quote: " + previousQuote.quote);
 		previousQuote = randomQuote;
 	}
 
@@ -40,7 +38,6 @@ function randomBackgroundColor() {
     let g = Math.floor(Math.random() * 200);
     let b = Math.floor(Math.random() * 200);
     let newBGColor = "rgb(" + r + "," + g + "," + b + ")";
- console.log(newBGColor);
   
     document.body.style.background = newBGColor;
     document.getElementById('loadQuote').style.background = newBGColor;
